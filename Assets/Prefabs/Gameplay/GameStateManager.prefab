@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1735895803046092668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762097072195573229}
+  - component: {fileID: 8755936224222816617}
+  - component: {fileID: 8564232635932478846}
+  m_Layer: 0
+  m_Name: Overworld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762097072195573229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735895803046092668}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1806196241883034333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8755936224222816617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735895803046092668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddacdb434871474b9c40e410d82fead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OverworldState
+  _conditions:
+  - {fileID: 8564232635932478846}
+  _overworldCamera: {fileID: 0}
+  _gameStateManager: {fileID: 1950167082902733588}
+--- !u!114 &8564232635932478846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735895803046092668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1282fa18f76beac4888127e00cf05c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StateCondition
+  _stateToChangeTo: {fileID: 1317178135173227270}
+  _condition:
+    rid: 3765522126994931851
+  references:
+    version: 2
+    RefIds:
+    - rid: 3765522126994931851
+      type: {class: BoolCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _target: {fileID: 1950167082902733588}
+        _memberName: IsInOverworldState
+        _comparison: 0
+        _value: 0
+--- !u!1 &7303897083734710160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466984120778674753}
+  - component: {fileID: 1317178135173227270}
+  - component: {fileID: 5677495812710130462}
+  - component: {fileID: 4919930916609569223}
+  - component: {fileID: 1228141846743773100}
+  - component: {fileID: 5771133000371063471}
+  - component: {fileID: 6773725857422218916}
+  m_Layer: 0
+  m_Name: FPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466984120778674753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1806196241883034333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1317178135173227270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14122bab423c45a40a3565f8c0df144c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsState
+  _conditions:
+  - {fileID: 5677495812710130462}
+  _spawner: {fileID: 0}
+  _gameStateManager: {fileID: 1950167082902733588}
+--- !u!114 &5677495812710130462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1282fa18f76beac4888127e00cf05c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StateCondition
+  _stateToChangeTo: {fileID: 8755936224222816617}
+  _condition:
+    rid: 3765522126994931851
+  references:
+    version: 2
+    RefIds:
+    - rid: 3765522126994931851
+      type: {class: BoolCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _target: {fileID: 1950167082902733588}
+        _memberName: IsInOverworldState
+        _comparison: 0
+        _value: 1
+--- !u!114 &4919930916609569223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e43df6d23ba2244aec52eabf9e8474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsShootingInfo
+  _timeToHold: 0.8
+  _critHitAngle: 45
+--- !u!114 &1228141846743773100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2cd3f6343370345882d2f61de6f554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsArmAnimation
+  _minRotationSpeed: 700
+  _maxRotationSpeed: 900
+  _critHitMaterial: {fileID: 2100000, guid: 5628bff432f62654d960a6d75d7a8bd8, type: 2}
+--- !u!114 &5771133000371063471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fa360df957edf48acb351ce698541e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsCamera
+  _mouseSensitivity: 100
+  _projectilePrefab: {fileID: 7261063872467850165, guid: 8995d3c0a78f0b74baa8e3b814b1603d, type: 3}
+  _critProjectilePrefab: {fileID: 7261063872467850165, guid: 74e25e256b34fd6409e45e2e40884d67, type: 3}
+  _minProjectileSpeed: 5
+  _maxProjectileSpeed: 50
+  _horizontalBloomOnNonCrit: 30
+--- !u!114 &6773725857422218916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303897083734710160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d69e753def7ed4b98d325514e6cfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsCrosshair
+  _crosshair: {fileID: 0}
+  _crosshairBeingScaled: {fileID: 0}
+  _startScale: 1.5
+  _endScale: 0.5
+--- !u!1 &7488813771524394968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806196241883034333}
+  - component: {fileID: 1950167082902733588}
+  - component: {fileID: 4301595094110854083}
+  m_Layer: 0
+  m_Name: GameStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806196241883034333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488813771524394968}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 762097072195573229}
+  - {fileID: 1466984120778674753}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950167082902733588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488813771524394968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9318e7545cc4a6849905a8584778955d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  _spawner: {fileID: 0}
+  _state: 0
+--- !u!114 &4301595094110854083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488813771524394968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e0f8b62947717442a38bc802e63dfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StateMachine
+  _stateComponents:
+  - {fileID: 8755936224222816617}
+  - {fileID: 1317178135173227270}
+  _activeState: {fileID: 0}

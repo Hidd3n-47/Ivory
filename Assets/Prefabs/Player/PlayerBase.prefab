@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2781534731352009871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 72862503515638514, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 130482117665089771, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 308535347142095331, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818816469577299460, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685689970878422466, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 59383
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Name
+      value: PlayerBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510958573208184542, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: _troopPrefab
+      value: 
+      objectReference: {fileID: 5027013376425733841, guid: fee914ed7dbbf84469ff7ac17fb33878, type: 3}
+    - target: {fileID: 4162063408631606946, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286162742989413774, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 65527
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293217026760228807, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367663500568242647, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856973600483104193, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: _projectilePrefab
+      value: 
+      objectReference: {fileID: 1316930888561595480, guid: 4affb06f88cc269459a5f2417033375b, type: 3}
+    - target: {fileID: 7566129501482686699, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6512700954605231878}
+    - targetCorrespondingSourceObject: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7502983027744784573}
+  m_SourcePrefab: {fileID: 100100000, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+--- !u!1 &857347694660226410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+  m_PrefabInstance: {fileID: 2781534731352009871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6512700954605231878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857347694660226410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9099ab1746f60294b8708e235e0cab9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  _troops:
+  - _prefab: {fileID: 5027013376425733841, guid: 4bc5ee3d8dab85341ad37ac63fac39c2, type: 3}
+    _spawnCooldown: 1
+    _maxTroopCount: 1
+  - _prefab: {fileID: 5027013376425733841, guid: fee914ed7dbbf84469ff7ac17fb33878, type: 3}
+    _spawnCooldown: 0.5
+    _maxTroopCount: 20
+--- !u!114 &7502983027744784573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857347694660226410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a330fad4c5e614c48988eebe7e5edda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Clickable
+  OnClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6512700954605231878}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: SpawnTroop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _clickableLayer:
+    serializedVersion: 2
+    m_Bits: 32768
+  _rayDistance: 100
+  _cursorNormal: {fileID: 2800000, guid: f8d327f88e3408f42b3dc6850224b676, type: 3}
+  _cursorHover: {fileID: 2800000, guid: ce683041f000c7c48b73e8fbda566384, type: 3}
