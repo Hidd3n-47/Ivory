@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -21,6 +23,7 @@ public class UiManager : MonoBehaviour
     private PathUi[] _pathUiButtons;
     private int _selectedPathButton = 0;
 
+    private Dictionary<int, SplineContainer> _pathIndexToSpline = new();
 
     void Start()
     {
@@ -53,11 +56,13 @@ public class UiManager : MonoBehaviour
             pathUi.Index = i;
             pathUi.Path  = _pathsParent.GetChild(i).GetComponent<SplineContainer>();
 
-            pathRect.GetComponent<Button>().onClick.AddListener(() => OnPathButtonPress(pathUi.Index, pathUi.Path));
+            pathRect.GetComponent<Button>().onClick.AddListener(() => OnPathButtonPress(pathUi.Index));
 
             pathUi.SetPathName($"Lane {i + 1}");
 
             pathRect.anchoredPosition = new Vector3(_padding.x * (i + 1) + pathRect.sizeDelta.x * i, _padding.y, 0.0f);
+
+            _pathIndexToSpline.Add(i, pathUi.Path);
 
             _pathUiButtons[i] = pathUi;
         }
@@ -79,6 +84,12 @@ public class UiManager : MonoBehaviour
 
     private void OnTroopButtonPress(int selectedTroopIndex)
     {
+        if (selectedTroopIndex == _selectedTroopButton)
+        {
+            _spawner.SpawnTroop(_selectedTroopButton, _pathIndexToSpline[_selectedPathButton]);
+            return;
+        }
+
         _troopUiButtons[_selectedTroopButton].DisableBorder();
 
         _selectedTroopButton = selectedTroopIndex;
@@ -86,11 +97,11 @@ public class UiManager : MonoBehaviour
         _troopUiButtons[_selectedTroopButton].EnableBorder();
     }
 
-    private void OnPathButtonPress(int selectedPathIndex, SplineContainer path)
+    private void OnPathButtonPress(int selectedPathIndex)
     {
         if (selectedPathIndex == _selectedPathButton)
         {
-            _spawner.SpawnTroop(_selectedTroopButton, path);
+            _spawner.SpawnTroop(_selectedTroopButton, _pathIndexToSpline[_selectedPathButton]);
             return;
         }
 
