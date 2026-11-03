@@ -169,6 +169,9 @@ MonoBehaviour:
   _troopUiPrefab: {fileID: 2894174506705008396, guid: a2556c36daaad754faf2460c2be73225, type: 3}
   _pathsParent: {fileID: 1550256923}
   _pathUiPrefab: {fileID: 685263715760045508, guid: 295663d07d4b4b14397baa7a81c13f71, type: 3}
+  _numFlashes: 3
+  _flashEnableDuration: 0.5
+  _durationBetweenFlashes: 0.2
 --- !u!4 &120499093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7646989409154027226, guid: 338dc193a94fedd4a80a6609f372d61e, type: 3}

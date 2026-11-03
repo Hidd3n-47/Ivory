@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,6 +22,12 @@ public class UiManager : MonoBehaviour
     [SerializeField] private Transform _pathsParent;
     [SerializeField] private Transform _pathUiPrefab;
     private PathUi[] _pathUiButtons;
+
+    [Header("Path Selection")]
+    [SerializeField] private int _numFlashes = 3;
+    [SerializeField] private float _flashEnableDuration    = 0.5f;
+    [SerializeField] private float _durationBetweenFlashes = 0.2f;
+
     private int _selectedPathButton = 0;
 
     private Dictionary<int, SplineContainer> _pathIndexToSpline = new();
@@ -44,6 +51,7 @@ public class UiManager : MonoBehaviour
             troopRect.anchoredPosition = new Vector3(-(_padding.x * (i + 1) + troopRect.sizeDelta.x * i), _padding.y, 0.0f);
 
             _troopUiButtons[i] = troopUi;
+            troopUi.DisableBorder();
         }
 
         _troopUiButtons.First()?.EnableBorder();
@@ -65,6 +73,7 @@ public class UiManager : MonoBehaviour
             _pathIndexToSpline.Add(i, pathUi.Path);
 
             _pathUiButtons[i] = pathUi;
+            pathUi.DisableBorder();
         }
 
         _pathUiButtons.First()?.EnableBorder();
@@ -105,11 +114,26 @@ public class UiManager : MonoBehaviour
             return;
         }
 
-
         _pathUiButtons[_selectedPathButton].DisableBorder();
 
         _selectedPathButton = selectedPathIndex;
 
         _pathUiButtons[_selectedPathButton].EnableBorder();
+
+        StopAllCoroutines();
+        StartCoroutine(SelectPath(_pathIndexToSpline[_selectedPathButton]));
+    }
+
+    private IEnumerator SelectPath(SplineContainer container)
+    {
+        MeshRenderer renderer = container.GetComponent<MeshRenderer>();
+
+        for (int i = 0; i < _numFlashes; ++i)
+        {
+            renderer.enabled = true;
+            yield return new WaitForSeconds(_flashEnableDuration);
+            renderer.enabled = false;
+            yield return new WaitForSeconds(_durationBetweenFlashes);
+        }
     }
 }
