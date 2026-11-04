@@ -32,6 +32,8 @@ public class UiManager : MonoBehaviour
 
     private Dictionary<int, SplineContainer> _pathIndexToSpline = new();
 
+    public int SelectedTroopIndex => _selectedTroopButton;
+
     void Start()
     {
         _troopUiButtons = new TroopUi[_spawner.Troops.Length];
@@ -91,11 +93,16 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public void SpawnTroop()
+    {
+        _spawner.SpawnTroop(_selectedTroopButton, _pathIndexToSpline[_selectedPathButton]);
+    }
+
     private void OnTroopButtonPress(int selectedTroopIndex)
     {
         if (selectedTroopIndex == _selectedTroopButton)
         {
-            _spawner.SpawnTroop(_selectedTroopButton, _pathIndexToSpline[_selectedPathButton]);
+            SpawnTroop();
             return;
         }
 
@@ -110,9 +117,11 @@ public class UiManager : MonoBehaviour
     {
         if (selectedPathIndex == _selectedPathButton)
         {
-            _spawner.SpawnTroop(_selectedTroopButton, _pathIndexToSpline[_selectedPathButton]);
+            SpawnTroop();
             return;
         }
+
+        int previouslySelectedSplineIndex = _selectedPathButton;
 
         _pathUiButtons[_selectedPathButton].DisableBorder();
 
@@ -120,22 +129,7 @@ public class UiManager : MonoBehaviour
 
         _pathUiButtons[_selectedPathButton].EnableBorder();
 
-        StopAllCoroutines();
-        StartCoroutine(SelectPath(_pathIndexToSpline[_selectedPathButton]));
-    }
-
-    private IEnumerator SelectPath(SplineContainer container)
-    {
-        //MeshRenderer renderer = container.GetComponent<MeshRenderer>();
-        SplineInstantiate instantiate = container.GetComponent<SplineInstantiate>();
-        for (int i = 0; i < _numFlashes; ++i)
-        {
-            //renderer.enabled = true;
-            instantiate.enabled = true;
-            yield return new WaitForSeconds(_flashEnableDuration);
-           // renderer.enabled = false;
-            instantiate.enabled = false;
-            yield return new WaitForSeconds(_durationBetweenFlashes);
-        }
+        _pathIndexToSpline[_selectedPathButton].GetComponent<SplineInstantiate>().enabled = false;
+        _pathIndexToSpline[_selectedPathButton].GetComponent<SplineInstantiate>().enabled = true;
     }
 }

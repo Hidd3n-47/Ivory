@@ -55,6 +55,5 @@ internal class FpsState : IState
         {
             fps.FpsCamera.gameObject.SetActive(false);
         }
-
     }
 }

@@ -36,13 +36,13 @@ public class Spawner : MonoBehaviour
     private GameObject _mainCamera;
     private Clickable _clickableComponent;
 
-    public void SpawnTroop(int poolIndex, SplineContainer path)
+    public bool SpawnTroop(int poolIndex, SplineContainer path)
     {
         var selectedTroop = _troops[poolIndex];
 
         if (selectedTroop.CooldownTimer > 0.0f)
         {
-            return;
+            return false;
         }
 
         if (selectedTroop.TryGetNextItemFromPool(out var troop))
@@ -54,7 +54,10 @@ public class Spawner : MonoBehaviour
             troop.GetComponentInChildren<Reset>().TriggerReset();
 
             selectedTroop.CooldownTimer = selectedTroop.SpawnCooldown;
+            return true;
         }
+
+        return false;
     }
 
     private void Awake()

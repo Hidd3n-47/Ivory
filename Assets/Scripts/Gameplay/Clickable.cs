@@ -40,6 +40,8 @@ public class Clickable : MonoBehaviour
         if (rayCastHit && Input.GetMouseButtonDown(0))
         {
             OnClicked?.Invoke(hit.transform);
+
+            hit.collider.gameObject.GetComponent<IOnClick>()?.OnClick();
         }
     }
 }
