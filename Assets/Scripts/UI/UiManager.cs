@@ -126,13 +126,15 @@ public class UiManager : MonoBehaviour
 
     private IEnumerator SelectPath(SplineContainer container)
     {
-        MeshRenderer renderer = container.GetComponent<MeshRenderer>();
-
+        //MeshRenderer renderer = container.GetComponent<MeshRenderer>();
+        SplineInstantiate instantiate = container.GetComponent<SplineInstantiate>();
         for (int i = 0; i < _numFlashes; ++i)
         {
-            renderer.enabled = true;
+            //renderer.enabled = true;
+            instantiate.enabled = true;
             yield return new WaitForSeconds(_flashEnableDuration);
-            renderer.enabled = false;
+           // renderer.enabled = false;
+            instantiate.enabled = false;
             yield return new WaitForSeconds(_durationBetweenFlashes);
         }
     }
