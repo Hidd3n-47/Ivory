@@ -140,10 +140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93eadfc3922c445469e80f04b6d4e6d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimateLight
-  _timeToAnimate: 0.2
+  _timeToAnimate: 0.1
   _timeToReset: 0.2
   _startIntencity: 0
-  _endIntencity: 1
+  _endIntencity: 5
 --- !u!1 &5394089170680068261
 GameObject:
   m_ObjectHideFlags: 0

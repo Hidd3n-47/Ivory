@@ -11,6 +11,8 @@ public class FpsShootingInfo : MonoBehaviour
 {
     [SerializeField] private float _timeToHold   = 5.0f;
     [SerializeField] private float _critHitAngle = 45.0f;
+    [SerializeField] private GameObject Dude;
+
 
     private InputAction _interactAction;
     private float       _timer = 0.0f;
@@ -44,6 +46,7 @@ public class FpsShootingInfo : MonoBehaviour
         if (_interactAction.IsPressed())
         {
             _timer += Time.deltaTime;
+          
         }
 
         if (_interactAction.WasReleasedThisFrame())

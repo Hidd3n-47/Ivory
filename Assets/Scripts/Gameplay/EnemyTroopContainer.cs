@@ -35,6 +35,8 @@ public class EnemyTroopContainer : MonoBehaviour
     private void Update()
     {
         if(AllTowersDestroyed && AllDefencesDestroyed && !_allTowersAndDefencesDown)
+        //if(AllTowersDestroyed)
+
         {
             OnAllTowersAndDefencesDown?.Invoke();
             _allTowersAndDefencesDown = true;

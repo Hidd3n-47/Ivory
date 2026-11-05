@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3164822720788892802, guid: f17f09d759a0be94dba454292ff09114, type: 3}
       propertyPath: _damage
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5027013376425733841, guid: f17f09d759a0be94dba454292ff09114, type: 3}
       propertyPath: m_LocalScale.x
@@ -125,6 +125,10 @@ PrefabInstance:
     - target: {fileID: 1742013225946848, guid: b3d8264aa7d2d824a8a503e45291ddf4, type: 3}
       propertyPath: m_Name
       value: Explosion01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742013225946848, guid: b3d8264aa7d2d824a8a503e45291ddf4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4389029538297518, guid: b3d8264aa7d2d824a8a503e45291ddf4, type: 3}
       propertyPath: m_LocalScale.x

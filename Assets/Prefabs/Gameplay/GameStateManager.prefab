@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FpsShootingInfo
   _timeToHold: 0.8
-  _critHitAngle: 45
+  _critHitAngle: 20
 --- !u!114 &1228141846743773100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4fa360df957edf48acb351ce698541e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FpsCamera
+  OnCritShot:
+    m_PersistentCalls:
+      m_Calls: []
   _mouseSensitivity: 100
   _projectilePrefab: {fileID: 7261063872467850165, guid: 8995d3c0a78f0b74baa8e3b814b1603d, type: 3}
   _critProjectilePrefab: {fileID: 7261063872467850165, guid: 74e25e256b34fd6409e45e2e40884d67, type: 3}
