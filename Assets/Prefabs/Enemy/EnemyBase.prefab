@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -828,6 +828,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -847,6 +851,10 @@ PrefabInstance:
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 6953783543970714937}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 5129477811383599607}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: TriggerOnDamageEffect
@@ -868,6 +876,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
@@ -882,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Add
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -902,6 +918,10 @@ PrefabInstance:
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.SphereCollider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: AddDontDestroyOnLoad, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -933,6 +953,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787793073784119434, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5325028442719745418, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
@@ -990,6 +1014,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3277519051305050597, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 520374178892984233}
+    - targetCorrespondingSourceObject: {fileID: 1212753476054217229, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5129477811383599607}
   m_SourcePrefab: {fileID: 100100000, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
 --- !u!1 &1927598680603748690 stripped
 GameObject:
@@ -1041,6 +1068,24 @@ MonoBehaviour:
         m_CallState: 2
   _towersParent: {fileID: 0}
   _defencesParent: {fileID: 0}
+--- !u!1 &2839715431188396730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1212753476054217229, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
+  m_PrefabInstance: {fileID: 4016123449800460471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5129477811383599607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839715431188396730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432926d44bcacd448b1bbabdd3d6f193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddDontDestroyOnLoad
+  _name: 
 --- !u!1 &3923675639991689308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 130482117665089771, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
@@ -1061,7 +1106,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4836952484398349477, guid: 8828c1cab3c14104998a167e3c5a7e33, type: 3}
   m_PrefabInstance: {fileID: 4016123449800460471}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2839715431188396730}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 882fa0898ea0b4647b166f5511c82681, type: 3}
