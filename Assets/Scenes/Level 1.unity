@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -474,15 +474,15 @@ PrefabInstance:
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 367034050}
+      objectReference: {fileID: 698573908}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 698573908}
+      objectReference: {fileID: 1883639465}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 1883639465}
+      objectReference: {fileID: 1356164284}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
@@ -521,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: SetActive
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: UnityEngine.SphereCollider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
@@ -557,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 228789972968106045, guid: e751a4d2fcdc9e547bf173f05bd72ff5, type: 3}
       propertyPath: OnDestroyed.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
@@ -1336,7 +1336,7 @@ PrefabInstance:
       objectReference: {fileID: 380611168}
     - target: {fileID: 6652896335332757282, guid: dde76565beee0694f94e35b87551a67b, type: 3}
       propertyPath: showColliderPreview
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7144493842737890815, guid: dde76565beee0694f94e35b87551a67b, type: 3}
       propertyPath: m_Enabled
@@ -3878,6 +3878,10 @@ PrefabInstance:
     - target: {fileID: 4919930916609569223, guid: 4c8501fa0ea86004aaef075060fe00c8, type: 3}
       propertyPath: _critHitAngle
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771133000371063471, guid: 4c8501fa0ea86004aaef075060fe00c8, type: 3}
+      propertyPath: _horizontalBloomOnNonCrit
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6773725857422218916, guid: 4c8501fa0ea86004aaef075060fe00c8, type: 3}
       propertyPath: _crosshair
